@@ -18,7 +18,7 @@ public class Task3 {
             hero.setName("Drake");
             objectOutputStream.writeObject(hero);
             hero = (Hero) objectInputStream.readObject();
-            System.out.printf("Name: %s lvl: %d", hero.getName(), hero.getLvl());
+            System.out.printf("Name: %s lvl: %d armor: %d", hero.getName(), hero.getLvl(), hero.getArmor());
         }
     }
 }

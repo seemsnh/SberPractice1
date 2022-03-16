@@ -9,12 +9,12 @@ public class Hero implements Serializable {
     private static final long serialVersionUID = 1L;
     String name;
     int lvl;
-    //object armor;
+    object armor;
 
     Hero(String name, int lvl){
         this.name = name;
         this.lvl = lvl;
-        //this.armor = new Armor();
+        this.armor = new Armor();
     }
 
     public String getName() {
@@ -25,9 +25,9 @@ public class Hero implements Serializable {
         return lvl;
     }
 
-//    public int getArmor() {
-//        return armor.getValue();
-//    }
+    public int getArmor() {
+        return armor.getValue();
+    }
 
 
     public void setName(String name) {
